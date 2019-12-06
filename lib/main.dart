@@ -53,16 +53,16 @@ class _MyHomePageState extends State<MyHomePage> {
               RaisedButton(
                   onPressed: () {
                     countDataLink.addCounter();
-                    setState(() {
-                      _counter = 0;
-                    });
+
+
+
                   },
                   child: Text('Save and Reset')),
               Text(
                 'You have pushed the button this many times:',
               ),
               Text(
-                '$_counter',
+                countDataLink.currentCounter.toString(),
                 style: Theme.of(context).textTheme.display1,
               ),
               RaisedButton(
